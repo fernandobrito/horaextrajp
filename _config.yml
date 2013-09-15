@@ -1,5 +1,6 @@
-name: #HoraExtraJP
+name: HoraExtraJP
 markdown: redcarpet
 pygments: true
 
 baseurl: /horaextrajp
+permalink: /:year/:month/:day/:title.html
