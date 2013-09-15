@@ -1,4 +1,4 @@
 horaextrajp
 ===========
 
-Blog com atas e fotos das edições do #HoraExtraJP.
+Blog (usando o Jekyll) com atas e fotos das edições do #HoraExtraJP.
