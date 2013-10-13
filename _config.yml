@@ -4,3 +4,5 @@ pygments: true
 
 baseurl: /horaextrajp
 permalink: /:year/:month/:day/:title.html
+
+exclude: [Gemfile, Gemfile.lock, posterous backup, README.md]
