@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+{% if page.attendence %}
+    <h2>Lista de Presença ({{ page.attendence.size }} pessoas)</h2>
+
+    <ol>
+    {% for person in page.attendence %}
+        <li>
+            {{ person[0] }}
+            {% if person[1] %} (<a href="http://twitter.com/{{ person[1] }}">@{{ person[1] }}</a>) {% endif %}
+        </li>
+    {% endfor %}
+    </ol>
+{% endif %}
+
+<div class="post">
+    {{ content }}
+</div>
