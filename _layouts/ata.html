@@ -17,6 +17,16 @@ layout: default
     </ol>
 {% endif %}
 
+{% if page.photos %}
+    <h2>Fotos</h2>
+
+    <div>
+    {% for photo_url in page.photos %}
+        <img src='{{ site.baseurl }}{{ photo_url }}' />
+    {% endfor %}
+    </div>
+{% endif %}
+
 <div class="post">
     {{ content }}
 </div>
